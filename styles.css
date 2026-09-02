@@ -42,17 +42,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
 }
 
 .logo {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 19px;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 24px;
   list-style: none;
 }
 
@@ -69,7 +69,7 @@ nav {
 #modo-toggle {
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 19px;
   cursor: pointer;
   color: white;
   transition: transform 0.2s;
@@ -80,24 +80,24 @@ nav {
 }
 
 section {
-  padding: 4rem 2rem;
+  padding: 64px 32px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 h1, h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 h2 {
   border-left: 6px solid var(--color-principal);
-  padding-left: 0.8rem;
+  padding-left: 13px;
 }
 
 .sobre-mi-contenido {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 32px;
   flex-wrap: wrap;
 }
 
@@ -122,8 +122,8 @@ h2 {
 .proyectos-lista {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  gap: 24px;
+  margin-top: 24px;
 }
 
 .proyecto-card {
@@ -146,19 +146,19 @@ h2 {
 }
 
 .proyecto-info {
-  padding: 1.2rem 1.5rem;
+  padding: 19px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .proyecto-info h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .proyecto-info a {
   display: inline-block;
-  margin-top: 0.8rem;
+  margin-top: 13px;
   color: var(--color-principal);
   align-self: flex-start;
   text-decoration: none;
@@ -173,7 +173,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 48px;
   flex-wrap: wrap;
 }
 
@@ -194,19 +194,23 @@ h2 {
 
 .skills-list {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   flex-wrap: wrap;
   list-style: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
-
+.skill-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+} 
 .skills-list li {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
   background: var(--color-principal);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   border-radius: 20px;
   transition: transform 0.2s;
 }
@@ -219,7 +223,7 @@ h2 {
   display: inline-block;
   background: var(--color-principal);
   color: white;
-  padding: 0.7rem 1.5rem;
+  padding: 11px 24px;
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s;
@@ -233,7 +237,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
@@ -241,8 +245,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  padding: 0.8rem 1.2rem;
+  gap: 10px;
+  padding: 13px 19px;
   border-radius: 8px;
   text-decoration: none;
   color: white;
@@ -274,14 +278,16 @@ h2 {
 
 footer {
   text-align: center;
-  padding: 1.5rem;
+  padding: 24px;
   background: var(--color-card);
+  border-top: 3px solid var(--color-principal);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6), 0 0 24px rgba(255, 0, 0, 0.35);
 }
 
 @media (max-width: 700px) {
   .nav-links {
-    gap: 1rem;
-    font-size: 0.9rem;
+    gap: 16px;
+    font-size: 14px;
   }
 }
 
@@ -296,5 +302,3 @@ footer {
     height: 280px;
   }
 }
-
-
